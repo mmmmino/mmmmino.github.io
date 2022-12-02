@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yanting Chen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/Panda-emoji.png">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+    <header>
+        <div class="header-container" id="home-div">
+            <button class="header-text"><a href="index.html">Home</a></button>
+            <button class="header-text"><a href="bio.html">Bio</a></button>
+            <!-- <button class="header-text"><a href="resume.html">Portfolio</a></button> -->
+            <button class="header-text"><a href="contact.html">Contact</a></button>
+            <button class="header-text"><a href="resume.html">Resume</a></button>
+        </div>
+        <button class="up-arrow" onClick="document.getElementById('home-div').scrollIntoView();">^</button>
+    <body>
+        <div id="portfolio-div">
+            <div class="info-container">
+                <p class="info-title smaller-font">Generating Audio for Muted Piano-Playing Video using Computer Vision</p>
+                <p class="video-text"> The goal of the project is to generate musical transcripts and corresponding audio from muted piano playing videos. When playing the piano, visual representations such as the position of the hands, the position of the keys and the depth with which they are pressed correspond to the sound produced by the piano. </p>
+                
+                <div class="video-container">
+                    <iframe class="video-format" src='assets/CV_Believer.m4v' title="Video"></iframe>
+                    
+                </div>
+                <p class="video-text">The project is divided into four stages:</p>
+                <p class="video-text">Keyboard Extraction: use SIFT algoritm to extract the keyboard area from each frame.</p>
+                <p class="video-text">Key Labeling: extract each black and white key from the keyboard and label them.</p>
+                <p class="video-text">Key-press Recognition: determine whether the keys are pressed or not and and record the status of each key.</p>
+                <p class="video-text">Generate soundtrack: generate audio according to the record of the status of each key.</p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
